@@ -99,7 +99,8 @@ DƯỚI ĐÂY LÀ BẢNG ĐÃ HOÀN THÀNH:
   ![Screenshot 2025-03-24 232553](https://github.com/user-attachments/assets/226f9bcb-ac38-41d1-80e8-45a6cc0ea2d4)
 
 + b4: Lưu lại dòng lệnh với tên # Script_DML.sql
-  
+  ![Screenshot 2025-03-24 232942](https://github.com/user-attachments/assets/cd5766d3-e9ea-4e49-822b-32e95a1b2f96)
+
 
 
 
