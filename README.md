@@ -69,7 +69,25 @@ Như ảnh ta được khóa chính:
 
 + Bước 6: Bảng hiện ra, chọn dấu ***
   ![Screenshot 2025-03-24 222821](https://github.com/user-attachments/assets/a676cacb-412e-4960-90c7-85ba29b35956)
-  Chọn Relationship name, Primarykey table (đây là bảng chứa khóa chính), Foreign key table (đây là bảng chứa khóa ngoại) Và Chọn thuộc tính maLop của hai bảng trên > chọn OK
+  Chọn Relationship name, Primarykey table (đây là bảng chứa khóa chính), Foreign key table (đây là bảng chứa khóa ngoại) Và Chọn thuộc tính maLop của hai bảng trên > chọn OK > Lưu lại
+
++ Bước 7: Đặt điều kiện cho các thuộc tính của bảng:
+![Screenshot 2025-03-25 083055](https://github.com/user-attachments/assets/4b2264bf-e854-4b6c-9127-af3af60785a9)
+Chọn Add > Chọn dấu 3 chấm
+![Screenshot 2025-03-25 083117](https://github.com/user-attachments/assets/d378f0b6-a6dc-4439-bd1d-0924ab974209)
+Nhập điều kiện cho bảng, ví dụ bảng "SinhViên" với cú pháp như sau:
+![Screenshot 2025-03-25 083259](https://github.com/user-attachments/assets/aa760583-eae2-4656-8ae4-1eab5e9af1db)
+Chọn Close > lưu lại
+![Screenshot 2025-03-25 083309](https://github.com/user-attachments/assets/277029e2-3e75-4d43-98f6-ac0c2431db8a)
+
+Kiểm tra điều kiện bằng cách thử các giá trị nhập vào: 
+ Chuột phải vào bảng, chọn Edit Top 200 Row
+![Screenshot 2025-03-25 083334](https://github.com/user-attachments/assets/3d3233bf-fe99-49d8-81c9-adcffb4ed91e)
+ Báo lỗi như này tức là giá trị nhập vào được so với điều kiện:
+![Screenshot 2025-03-25 083411](https://github.com/user-attachments/assets/572132d3-86f1-4552-949e-221140f3e175)
+
+
+  
 ![Screenshot 2025-03-24 223048](https://github.com/user-attachments/assets/5b8825fa-647c-4571-8449-d8cadb9ffe4c)
  LÀM TƯƠNG TỰ VỚI CÁC BẢNG KHÁC
 
