@@ -73,12 +73,16 @@ Như ảnh ta được khóa chính:
 
 + Bước 7: Đặt điều kiện cho các thuộc tính của bảng:
 ![Screenshot 2025-03-25 083055](https://github.com/user-attachments/assets/4b2264bf-e854-4b6c-9127-af3af60785a9)
+
 Chọn Add > Chọn dấu 3 chấm
 ![Screenshot 2025-03-25 083117](https://github.com/user-attachments/assets/d378f0b6-a6dc-4439-bd1d-0924ab974209)
+
 Nhập điều kiện cho bảng, ví dụ bảng "SinhViên" với cú pháp như sau:
 ![Screenshot 2025-03-25 083259](https://github.com/user-attachments/assets/aa760583-eae2-4656-8ae4-1eab5e9af1db)
+
 Chọn Close > lưu lại
 ![Screenshot 2025-03-25 083309](https://github.com/user-attachments/assets/277029e2-3e75-4d43-98f6-ac0c2431db8a)
+
 
 Kiểm tra điều kiện bằng cách thử các giá trị nhập vào: 
  Chuột phải vào bảng, chọn Edit Top 200 Row
