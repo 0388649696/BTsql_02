@@ -59,6 +59,42 @@ Chú ý:
 ![bang sinh vien](https://github.com/user-attachments/assets/c15989ea-1068-4096-805b-465c887dde7f)
 + Bước 3: Nhập thông tin vào bảng mới, Cột Column điền thuộc tính, Data type đặt thuộc tính, Allow Null ( tích nếu giá trị để trống được)
 
+![Screenshot 2025-03-24 213639](https://github.com/user-attachments/assets/c085dc60-574b-46ff-8534-8d0db2824e34)
++ Bước 4: Đặt khóa chính (Primary Key) bằng cách chuột phải vào khóa cần đặt chọn Set Primary Key.
+Như ảnh ta được khóa chính:
+![bang sinh vien](https://github.com/user-attachments/assets/c15989ea-1068-4096-805b-465c887dde7f)
+
+![khóa ngoại](https://github.com/user-attachments/assets/c1f4bf01-f99b-487b-b2b9-22eb02293fbc)
++ Bước 5: Đặt khóa ngoại (Foregin key) bằng cách chuột phải trong bảng chọn Relationships
+
++ Bước 6: Bảng hiện ra, chọn dấu ***
+  ![Screenshot 2025-03-24 222821](https://github.com/user-attachments/assets/a676cacb-412e-4960-90c7-85ba29b35956)
+  Chọn Relationship name, Primarykey table (đây là bảng chứa khóa chính), Foreign key table (đây là bảng chứa khóa ngoại) Và Chọn thuộc tính maLop của hai bảng trên > chọn OK
+![Screenshot 2025-03-24 223048](https://github.com/user-attachments/assets/5b8825fa-647c-4571-8449-d8cadb9ffe4c)
+ LÀM TƯƠNG TỰ VỚI CÁC BẢNG KHÁC
+
+DƯỚI ĐÂY LÀ BẢNG ĐÃ HOÀN THÀNH:
+![bang sinh vien](https://github.com/user-attachments/assets/62134baa-7364-40e3-87db-cd801ba87377)
+![bang lop](https://github.com/user-attachments/assets/9c54b67a-7d92-4d74-a40e-510753fbb843)
+![bang gvcn](https://github.com/user-attachments/assets/9cd6ab86-fa65-47c5-8bf4-a26edeb7b232)
+![bang lopsv](https://github.com/user-attachments/assets/dba807ad-1387-448d-a183-1add15fc01e2)
+![bang giaovien](https://github.com/user-attachments/assets/9c478532-5f32-4934-8968-f563612ddddb)
+![bang Bomon](https://github.com/user-attachments/assets/f6071b31-4842-4d21-b583-0be5d98afac7)
+![bang Khoa](https://github.com/user-attachments/assets/a072554a-630a-4dd3-9bdd-cc647172608e)
+![bang Monhoc](https://github.com/user-attachments/assets/fa3beebb-1aed-434a-9377-07c074da3686)
+![bang Lophp](https://github.com/user-attachments/assets/a49ec324-a620-4009-9a13-dbbb02d85df7)
+![bang DKMH](https://github.com/user-attachments/assets/d59fbac6-4c7d-4de7-a64b-4ef32a53a340)
+
+
+## II. XUẤT CODE RA FILE Script_DML.sql
+
++ b1: Chọn Db QLSV > chọn Tasks> Generate Scripts... >
+![Screenshot 2025-03-24 232447](https://github.com/user-attachments/assets/8eda5bbf-3dc6-437f-9494-bcfd54aac59a)
++ b2: Bảng Generate Scripts hiện ra. Chọn Choose Objects > chọn Select specific database objects
+  Tùy chọn này cho phép chọn bảng theo ý. Ngoài ra có thể chọn Script entire database and all databsse để chọn toàn bộ
+![Screenshot 2025-03-24 232504](https://github.com/user-attachments/assets/15bae79b-c3d2-4a89-bc34-cf91ba517907)
+
+
 
 
 
