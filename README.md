@@ -90,11 +90,16 @@ DƯỚI ĐÂY LÀ BẢNG ĐÃ HOÀN THÀNH:
 
 + b1: Chọn Db QLSV > chọn Tasks> Generate Scripts... >
 ![Screenshot 2025-03-24 232447](https://github.com/user-attachments/assets/8eda5bbf-3dc6-437f-9494-bcfd54aac59a)
-+ b2: Bảng Generate Scripts hiện ra. Chọn Choose Objects > chọn Select specific database objects
++ b2: Bảng Generate Scripts hiện ra. Chọn Choose Objects > chọn Select specific database objects >Next 
   Tùy chọn này cho phép chọn bảng theo ý. Ngoài ra có thể chọn Script entire database and all databsse để chọn toàn bộ
 ![Screenshot 2025-03-24 232504](https://github.com/user-attachments/assets/15bae79b-c3d2-4a89-bc34-cf91ba517907)
 
++ b3: Chọn Open in new query window để xem các dòng lệnh
+  ![Screenshot 2025-03-24 232534](https://github.com/user-attachments/assets/1968b899-faed-4908-806b-b1b30f61c709)
+  ![Screenshot 2025-03-24 232553](https://github.com/user-attachments/assets/226f9bcb-ac38-41d1-80e8-45a6cc0ea2d4)
 
++ b4: Lưu lại dòng lệnh với tên # Script_DML.sql
+  
 
 
 
