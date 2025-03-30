@@ -123,15 +123,15 @@ Các dữ liệu demo của các bảng như sau:
    
       AVG(Diem.diem) AS [Điểm thành phần]
       
-  FROM DKMH
+      FROM DKMH
   
-  LEFT JOIN Diem ON DKMH.id_dk = Diem.id_dk
+      LEFT JOIN Diem ON DKMH.id_dk = Diem.id_dk
   
-  JOIN LopHP ON DKMH.MaLopHP = LopHP.MaLopHP
+      JOIN LopHP ON DKMH.MaLopHP = LopHP.MaLopHP
   
-  GROUP BY DKMH.MaSV, LopHP.MaLopHP, LopHP.TenLopHP, DKMH.DiemThi, DKMH.PhanTramThi
+      GROUP BY DKMH.MaSV, LopHP.MaLopHP, LopHP.TenLopHP, DKMH.DiemThi, DKMH.PhanTramThi
   
-  ORDER BY LopHP.MaLopHP;
+      ORDER BY LopHP.MaLopHP;
 
  ### Kết quả sau khi chạy lệnh truy vấn trên:
 ![image](https://github.com/user-attachments/assets/5066220b-aba2-4cea-91f4-48355979b410)
