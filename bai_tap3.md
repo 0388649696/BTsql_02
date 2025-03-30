@@ -55,6 +55,86 @@ Bên cạnh đó, sẽ có điểm thưởng 10đ cho sv :  🎁
 2. Hỏi câu hỏi làm thầy khó trả lời.
 
 # I. Sửa bảng DKMH và bảng Điểm từ bài tập 2 để có các bảng:
+Sửa bảng DKMH:
+![image](https://github.com/user-attachments/assets/d8a4b141-e37c-4057-87a6-d20a06d6f703)
+Tạo bảng Điểm:
+![image](https://github.com/user-attachments/assets/1a8d4a1e-40da-47f2-aab9-4ead5229596c)
+![Screenshot 2025-03-30 204711](https://github.com/user-attachments/assets/e55540d0-5436-4bd8-9a11-59654f9247ab)
+![image](https://github.com/user-attachments/assets/fc1d96b8-1c92-44e1-bdb0-91b68538df47)
+
+## Nhập dữ liệu demo cho các bảng (nhập có kiểm soát từ tính năng Edit trên UI của mssm)
+Các dữ liệu demo của các bảng như sau:
+![image](https://github.com/user-attachments/assets/10f185cc-6789-4474-84c4-96274b47beef)
+![image](https://github.com/user-attachments/assets/cc915113-e7ef-4ba7-8f5b-b2a78d5f3a13)
+![image](https://github.com/user-attachments/assets/fbeed0b2-f73a-4062-ae40-8fa832b571e5)
+![image](https://github.com/user-attachments/assets/7ce207b5-646a-478c-a8bc-03bc88568a10)
+![image](https://github.com/user-attachments/assets/c8bffc9b-5bb8-4e0a-a8d9-06d1dd5a46e1)
+![image](https://github.com/user-attachments/assets/d4fa519e-e6b2-4288-97fa-d063913c3397)
+![image](https://github.com/user-attachments/assets/b9b56b43-f2b6-43f2-b694-47d37e36daeb)
+![image](https://github.com/user-attachments/assets/ee9a30f5-d897-43bc-813f-c222eb81d75b)
+
+# Viết lệnh truy vấn để: Tính được điểm thành phần của 1 sinh viên đang học tại 1 lớp học phần.
+### Lệnh truy vấn này tính điểm thành phần của tất cả sinh viên của tất cả lớp học phần.
+  SELECT 
+  
+      DKMH.MaSV MSSV, 
+      
+      LopHP.MaLopHP [Mã lớp HP], 
+      
+      LopHP.TenLopHP [Tên lớp HP], 
+      
+      DKMH.DiemThi [Điểm thi], 
+      
+      DKMH.PhanTramThi [Phần trăm thi], 
+      
+  	  COUNT(Diem.diem) AS [Số điểm thành phần],
+   
+      AVG(Diem.diem) AS [Điểm thành phần]
+
+      FROM DKMH
+  
+      LEFT JOIN Diem ON DKMH.id_dk = Diem.id_dk
+  
+      JOIN LopHP ON DKMH.MaLopHP = LopHP.MaLopHP
+  
+      GROUP BY DKMH.MaSV, LopHP.MaLopHP, LopHP.TenLopHP, DKMH.DiemThi, DKMH.PhanTramThi
+  
+      ORDER BY LopHP.MaLopHP;
+
+### Kết quả sau khi chạy lệnh truy vấn trên:
+![image](https://github.com/user-attachments/assets/7ff18170-9140-485f-815c-8a46a64c41f2)
+
+# Viết lệnh truy vấn để: Tính được điểm thành phần của 1 sinh viên đang học tại 1 lớp học phần.
+### Lệnh truy vấn này tính điểm thành phần của tất cả sinh viên của tất cả lớp học phần.
+
+  SELECT 
+  
+      DKMH.MaSV MSSV, 
+      
+      LopHP.MaLopHP [Mã lớp HP], 
+      
+      LopHP.TenLopHP [Tên lớp HP], 
+      
+      DKMH.DiemThi [Điểm thi], 
+      
+      DKMH.PhanTramThi [Phần trăm thi], 
+      
+  	  COUNT(Diem.diem) AS [Số điểm thành phần],
+   
+      AVG(Diem.diem) AS [Điểm thành phần]
+      
+  FROM DKMH
+  
+  LEFT JOIN Diem ON DKMH.id_dk = Diem.id_dk
+  
+  JOIN LopHP ON DKMH.MaLopHP = LopHP.MaLopHP
+  
+  GROUP BY DKMH.MaSV, LopHP.MaLopHP, LopHP.TenLopHP, DKMH.DiemThi, DKMH.PhanTramThi
+  
+  ORDER BY LopHP.MaLopHP;
+
+ ### Kết quả sau khi chạy lệnh truy vấn trên:
+![image](https://github.com/user-attachments/assets/5066220b-aba2-4cea-91f4-48355979b410)
 
 
 
