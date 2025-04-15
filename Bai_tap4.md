@@ -58,7 +58,7 @@ Nhập dữ liệu cho bảng Phong
 ![image](https://github.com/user-attachments/assets/239c07d3-f52d-460b-b287-fcddb04b20f3)
 
 Tạo hàm ufn_GiangVienDangDay, dùng để tra cứu thông tin giảng dạy của giảng viên trong khoảng thời gian cụ thể.
-![image](https://github.com/user-attachments/assets/62421c35-7688-48f6-9481-7d86dd5efcbb)
+![image](https://github.com/user-attachments/assets/3c25bc6f-79fe-4f20-b3a6-23b7bbba96d8)
 
 Nhập dữ liệu cho bảng TKB
 ![image](https://github.com/user-attachments/assets/6fb63ba4-3f94-44e4-b17a-064b210b19a8)
