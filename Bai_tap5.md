@@ -132,13 +132,17 @@ Em thêm thủ công lần đăng ký học của sinhvien này:
 Kiểm tra hoạt động của Trigger mang lại:
 ![image](https://github.com/user-attachments/assets/be3b714d-e575-4230-b9c0-4f8193d64306)
 
+CẬP NHẬT ĐOẠN CODE VỀ TRIGGER VÀ TRƯỜNG PHI CHUẨN CHO THẦY XEM:
+(EM ĐÃ LÀM TỪ TRƯỚC RỒI Ạ! THẦY CÓ THỂ THẤY CODE VÀ ẢNH ĐỒNG NHẤT VỚI NHAU:
+![image](https://github.com/user-attachments/assets/5a52fc9b-826d-4b35-a317-e9693fb9f57a)
+
+
 Kết luận về Trigger đã giúp gì cho đồ án:
 Trigger (cụ thể là tr_QL_Dangky_AfterInsert và các Trigger đồng bộ khác) đóng vai trò cực kỳ quan trọng như:
  + Đảm bảo tính nhất quán dữ liệu tự động
  + Duy trì hiệu suất đọc (từ trường phi chuẩn)
 
 Kết luận của em: Trigger duy trì sự chính xác của các trường phi chuẩn một cách tự động và đáng tin cậy, cho phép hệ thống tận dụng lợi thế về tốc độ đọc của các trường phi chuẩn mà vẫn đảm bảo tính toàn vẹn dữ liệu trước các thay đổi từ ứng dụng
-
 
 
 
