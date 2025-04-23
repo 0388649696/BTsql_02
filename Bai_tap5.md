@@ -97,11 +97,47 @@ Lập kế hoạch kiểm thử và thực hiện kiểm thử các chức năng
 Sơ đồ thực thể liên kết:
 ![image](https://github.com/user-attachments/assets/e5ece73a-235f-4f72-94fc-941271fb37d2)
 
-#B. Nội dung Bài tập
+# B. Nội dung Bài tập
+### 2. Tìm cách bổ xung thêm 1 (hoặc vài) trường phi chuẩn:
+
+* Để DEMO, em xin đưa ra 1 trường phi chuẩn mang tên TongSoDangKy cho bảng HocVien
+- Ý nghĩa: Lưu trữ tổng số lần học viên này đã thực hiện đăng ký vào các lớp học khác nhau.
+Tính toán được từ: Đếm số lượng bản ghi trong bảng QL_Dangky có trường MaHocVien (hoặc masv) trùng với mã của học viên này.
+- Công thức: COUNT(*) từ bảng QL_Dangky WHERE MaHocVien = [Mã học viên].
+- Logic để thêm (Ưu điểm về tốc độ và đơn giản):
+ + Thông thường, để biết mỗi học viên đã đăng ký bao nhiêu lớp, bạn phải chạy một câu truy vấn COUNT và GROUP BY trên bảng QL_Dangky.
+ + Nếu danh sách học viên thường xuyên được hiển thị cùng với thông tin này (ví dụ: trong báo cáo học viên, danh sách khách hàng thân thiết), việc tính toán COUNT cho hàng loạt học viên có thể tốn thời gian.
+ + Lưu trữ TongSoDangKy trong bảng HocVien cho phép bạn đọc thẳng giá trị này khi truy vấn thông tin học viên, tăng tốc độ hiển thị.
+ + Logic đồng bộ cho trường này khá đơn giản: Tăng TongSoDangKy lên 1 khi một bản ghi QL_Dangky MỚI được thêm vào cho học viên đó, và giảm đi 1 khi một bản ghi QL_Dangky của học viên đó bị xóa hoặc bị đánh dấu là hủy vĩnh viễn. Việc này đơn giản hơn nhiều so với việc đồng bộ các trường liên quan đến số tiền.
+
+Thực hành:
+Đây là kết quả trường TongSoDangKy đếm xem 
+![image](https://github.com/user-attachments/assets/597d17dd-2c82-4f69-b7eb-f964588519ba)
+Cho thấy sv001 chỉ có duy nhất 1 lần đăng ký:
+![image](https://github.com/user-attachments/assets/316f98d7-6d40-485a-bdf3-0672f2fcbcd9)
 
 
+3. Viết trigger cho 1 bảng nào đó, 
+Bảng đặt Trigger: Trigger sẽ được đặt trên bảng QL_Dangky. Lý do là vì số lượng bản ghi đăng ký (TongSoDangKy) của một học viên thay đổi khi có thao tác thêm/xóa/cập nhật trên bảng QL_Dangky.
+Loại Trigger: Chúng ta sẽ viết Trigger chạy sau khi có bản ghi mới được thêm vào bảng QL_Dangky (AFTER INSERT).
+Trigger sử dụng trường phi chuẩn: Trigger này sẽ cập nhật giá trị của trường phi chuẩn TongSoDangKy trong bảng HocVien.
 
+ - Các Mục tiêu của Trigger này:
+Đồng bộ hóa tự động: Tự động cập nhật giá trị của trường phi chuẩn TongSoDangKy trong bảng HocVien mỗi khi có một lượt đăng ký mới được thêm vào QL_Dangky, mà không cần ứng dụng hay người dùng phải thực hiện thao tác cập nhật riêng biệt.
+Đảm bảo tính nhất quán dữ liệu: Giúp giá trị lưu trữ trong trường TongSoDangKy luôn phản ánh đúng số lượng bản ghi đăng ký hiện có trong QL_Dangky cho từng học viên, giảm thiểu nguy cơ dữ liệu bị sai lệch giữa hai bảng.
 
+DEMO:
+Em thêm thủ công lần đăng ký học của sinhvien này:
+![image](https://github.com/user-attachments/assets/007b260c-c4b4-409e-a25f-ab372acc750f)
+Kiểm tra hoạt động của Trigger mang lại:
+![image](https://github.com/user-attachments/assets/be3b714d-e575-4230-b9c0-4f8193d64306)
+
+Kết luận về Trigger đã giúp gì cho đồ án:
+Trigger (cụ thể là tr_QL_Dangky_AfterInsert và các Trigger đồng bộ khác) đóng vai trò cực kỳ quan trọng như:
+ + Đảm bảo tính nhất quán dữ liệu tự động
+ + Duy trì hiệu suất đọc (từ trường phi chuẩn)
+
+Kết luận của em: Trigger duy trì sự chính xác của các trường phi chuẩn một cách tự động và đáng tin cậy, cho phép hệ thống tận dụng lợi thế về tốc độ đọc của các trường phi chuẩn mà vẫn đảm bảo tính toàn vẹn dữ liệu trước các thay đổi từ ứng dụng
 
 
 
