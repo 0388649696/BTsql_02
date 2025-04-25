@@ -16,3 +16,16 @@ Cho file sv_tnut.sql (1.6MB)
 10. HÃY NHẬP SQL ĐỂ LIỆT KÊ CÁC SV NỮ NGÀNH KMT CÓ TRONG BẢNG SV (TRÌNH BÀY QUÁ TRÌNH SUY NGHĨ VÀ GIẢI NHỮNG VỨNG MẮC)
 
 DEADLINE: 23H59:59 NGÀY 25/4/2025
+
+
+### 1. Nêu ra bước để import được dữ liệu trong sv_tnut.sql là:
+B1: mở SSMS
+B2: Trên thanh công cụ, chọn file ---> open ---> file... Trong cửa sổ mới sẽ hiện ra. Tìm chỗ lưu file SQL đã tải và bấm open
+![image](https://github.com/user-attachments/assets/68ce898b-dc41-43b4-a557-735199292558)
+
+B3: Tạo database có tên sv_tnut để trùng với câu lệnh USE [sv_tnut] file mẫu:
+![image](https://github.com/user-attachments/assets/90a32fec-82a0-4857-aac8-d7d74eb64f26)
+B4: Chạy code để tạo các bảng cho database
+
+
+
