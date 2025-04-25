@@ -68,7 +68,8 @@ Chú thích:
 - Đầu tiên, e lọc ra các sinh viên thuộc nghành KMT( trong đó có cả các sinh viên KTP vì KTP cũng là sinh viên KMT)
 - Tiếp theo, e lọc thủ công tên cho giới nữ (có thể)
 - Tiếp theo, e đưa các tên vào code để cho ra các sinh viên có thể là nữ trong nghành KMT.
-Nhược điểm: Một số bạn nam sẽ có tên giống nữ. Phải đối chiếu dữ liệu khác để sửa lại thông tin
+
++ Nhược điểm: Một số bạn nam sẽ có tên giống nữ. Phải đối chiếu dữ liệu khác để sửa lại thông tin. Thực chất dữ liệu sẽ sai sót. Muốn đúng phải sửa thủ công, kiểm tra thủ công
 
 
 
