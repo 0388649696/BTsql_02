@@ -38,7 +38,37 @@ Dùng câu lenh SELECT để chọn các trường phù hợp với yêu cầu t
 dùng câu lệnh day, month, year để lấy được ngày, tháng, năm từ cột ns có kiểu Date để so sánh:
 ![image](https://github.com/user-attachments/assets/4fe3568c-4367-469a-848e-6e9dad4553d5)
 
+### 4. Truy vấn những sinh viên trùng ngày, tháng sinh với em:
+![image](https://github.com/user-attachments/assets/2f62abc7-75f0-47d6-902f-e62a05ca3a5f)
 
+### 5. Truy vấn những sinh viên trùng tháng, năm sinh với em:
+![image](https://github.com/user-attachments/assets/1bf0fec8-f96d-40ba-b348-2dc89bb00b53)
+
+### 6. Truy vấn những sinh viên trùng tên với em:
+![image](https://github.com/user-attachments/assets/234c751c-c9c3-407a-9c02-aa0e9b62b418)
+
+### 7. Truy vấn những sinh viên trùng họ và tên đệm với em:
+![image](https://github.com/user-attachments/assets/c576840d-b5dd-4197-9ffb-506d65fd5884)
+> Tên em là độc nhất vô nhị nên ko thấy gì
+
+### 8. Truy vấn những sv có sđt sai khác chỉ 1 số so với sđt của em:
+![image](https://github.com/user-attachments/assets/e30738d6-dfbb-4b39-923d-609820e8b8ce)
+
+### 9. LIỆT KÊ TẤT CẢ CÁC SV NGÀNH KMT, SẮP XẾP THEO TÊN VÀ HỌ ĐỆM, KIỂU TIẾNG VIỆT:
+![image](https://github.com/user-attachments/assets/075a906b-5a2e-490c-8d34-31160d656e2e)
+
+Chú thích:
+where lop like '%KMT%': để tìm trong cột lop xem có chuỗi nào chứa chuỗi ký tự 'KMT' thì lấy ra.
+collate Vietnamese_CI_AS : Sắp xêp tên và họ đệm kiểu tiếng Việt
+
+### 10. LIỆT KÊ CÁC SV NỮ NGÀNH KMT CÓ TRONG BẢNG SV:
+![image](https://github.com/user-attachments/assets/bc99eb45-5c13-40d3-8558-6e14141c7743)
+
+Chú thích:
+Đầu tiên, e lọc ra các sinh viên thuộc nghành KMT( trong đó có cả các sinh viên KTP vì KTP cũng là sinh viên KMT)
+Tiếp theo, e lọc thủ công tên cho giới nữ (có thể)
+Tiếp theo, e đưa các tên vào code để lọc ra các sinh viên có thể là nữ trong nghành KMT.
+Nhược điểm: Một số bạn nam sẽ có tên giống nữ. Phải đối chiếu dữ liệu khác để sửa lại thông tin
 
 
 
