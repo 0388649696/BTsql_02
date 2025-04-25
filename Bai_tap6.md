@@ -25,7 +25,26 @@ B2: Trên thanh công cụ, chọn file ---> open ---> file... Trong cửa sổ 
 
 B3: Tạo database có tên sv_tnut để trùng với câu lệnh USE [sv_tnut] file mẫu:
 ![image](https://github.com/user-attachments/assets/90a32fec-82a0-4857-aac8-d7d74eb64f26)
-B4: Chạy code để tạo các bảng cho database
+B4: Chạy code để tạo các bảng cho database như dưới
+![image](https://github.com/user-attachments/assets/cb77bf11-7a17-41ae-a8d8-22f43588f496)
+
+### 2. dữ liệu đầu vào là tên của sv; sđt; ngày, tháng, năm sinh của sinh viên
+ruy vấn ra thông tin của em (Nguyễn Đức Anh Tú) với dữ liệu đầu vào là tên, sdt, ngày tháng năm sinh:
+Chọn new query để code các truy vấn
+Dùng câu lenh SELECT để chọn các trường phù hợp với yêu cầu thông tin của em:
+![image](https://github.com/user-attachments/assets/5c5bbd2f-f8bf-4937-9590-c25bb893e7a6)
+
+### 3. Truy vấn những sinh viên trùng hoàn toàn ngày, tháng, năm sinh với em:
+dùng câu lệnh day, month, year để lấy được ngày, tháng, năm từ cột ns có kiểu Date để so sánh:
+![image](https://github.com/user-attachments/assets/4fe3568c-4367-469a-848e-6e9dad4553d5)
+
+
+
+
+
+
+
+
 
 
 
