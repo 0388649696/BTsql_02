@@ -65,9 +65,9 @@ collate Vietnamese_CI_AS : Sắp xêp tên và họ đệm kiểu tiếng Việt
 ![image](https://github.com/user-attachments/assets/bc99eb45-5c13-40d3-8558-6e14141c7743)
 
 Chú thích:
-Đầu tiên, e lọc ra các sinh viên thuộc nghành KMT( trong đó có cả các sinh viên KTP vì KTP cũng là sinh viên KMT)
-Tiếp theo, e lọc thủ công tên cho giới nữ (có thể)
-Tiếp theo, e đưa các tên vào code để lọc ra các sinh viên có thể là nữ trong nghành KMT.
+- Đầu tiên, e lọc ra các sinh viên thuộc nghành KMT( trong đó có cả các sinh viên KTP vì KTP cũng là sinh viên KMT)
+- Tiếp theo, e lọc thủ công tên cho giới nữ (có thể)
+- Tiếp theo, e đưa các tên vào code để cho ra các sinh viên có thể là nữ trong nghành KMT.
 Nhược điểm: Một số bạn nam sẽ có tên giống nữ. Phải đối chiếu dữ liệu khác để sửa lại thông tin
 
 
